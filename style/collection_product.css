@@ -6,6 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .header
 {
     margin-top: 0px;
@@ -16,7 +17,7 @@
     position: relative;
     align-items: center;
 }
-   
+
 
 
 .search_box
@@ -37,11 +38,11 @@
     position: relative;
     padding: 8px 50px 8px 10px;
 
-    
+
 }
 .search_box i
 {
-    
+
     position: absolute;
     font-size: 20px;
     background-color:#fff;
@@ -57,10 +58,10 @@
     background-color: #fff;
     font-size: 30px;
     color: #000;
-    
+
 }
 .cart a
-{   
+{
     color:#000;
     padding: 3px;
 }
@@ -73,30 +74,66 @@
    left: 30px;
    padding: 0 8px 8px 8px;
 
-   
-}
 
+}
 .main_menu
 {
-    position: absolute;
-
-    left: 150px;
-    right: 350px;
     background-color: #fff;
+    margin-left: 160px;
 }
 
-#nav li
+#nav
 {
-    display: inline-block;
+    list-style: none;
+    display: flex;
     padding: 15px;
 }
 
-#nav li a
+.menu-item
 {
+    position: relative;
+}
+
+#nav li a {
+    color: black;
     text-decoration: none;
-    color: #000;
+    padding: 10px 20px;
+    display: block;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+
+}
+
+#nav li a:hover
+{
+    color: forestgreen;
+}
+.subnav_tent
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 200px;
+    list-style-type: none;
+    font-size: 13px;
+
+}
+
+.menu-item:hover .subnav_tent
+{
+    display: block;
+}
+
+.menu-item:hover .subnav_tent
+{
+
+    opacity: 1;
+    transition: opacity 0.6s ease;
 }
 
 .banner 

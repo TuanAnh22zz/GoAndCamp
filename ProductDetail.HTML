@@ -11,49 +11,50 @@
   <title>Product Detail</title>
 </head>
 <body>
-  <!-- Header -->
-  <div class="header">
-    <div class="logo_header">
-      <a href="HOMEPAGE.HTML">
-        <img src="Image/logo2-removebg-preview.png" alt="Logo" height="100" width="120" />
-      </a>
-    </div>
+    <div class="header">
+        
+        <div class="logo_header">
+            <a href="HOMEPAGE.HTML"> <img src="Image/logo2-removebg-preview.png" alt="" height="100px" width="120px"></a>
+           
+        </div>
 
-    <div class="main_menu">
-      <ul id="nav">
-        <li class="menu-item">
-          <a href="#">TENTS</a>
-          <ul class="subnav_tent">
-            <li><a href="/Tent/LightWeighTent.html">LightWeight Tents</a></li>
-            <li><a href="/Tent/GlampingTent.HTML">Glamping Tents</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="/Sleeping Bag/SleepingBag.HTML">SLEEPING</a></li>
-        <li class="menu-item">
-          <a href="#">FURNITURE</a>
-          <ul class="subnav_tent">
-            <li><a href="/Furniture/CampingChair.HTML">Camping Chair</a></li>
-            <li><a href="/Furniture/FoldingTable.HTML">Folding Table</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="/CookWare/CookWare.HTML">COOKWARE</a></li>
-        <li class="menu-item"><a href="/ABOUTUS.HTML">ABOUT US</a></li>
-        <li class="menu-item"><a href="#">LAB</a></li>
-      </ul>
-    </div>
+        <div class="main_menu">
+            <ul id="nav">
+                <li class="menu-item">
+                    <a href="#">TENTS</a>
+                    <ul class="subnav_tent">
+                        <li><a href="/Tent/LightWeighTent.html">LightWeight Tents</a></li>
+                        <li><a href="/Tent/GlampingTent.HTML">Glamping Tents</a></li>
+                    </ul>
+                </li>
+        
+                <li class="menu-item"><a href="/Sleeping Bag/SleepingBag.HTML">SLEEPING</a></li>
+                    <li class="menu-item">
+                    <a href="#">FURNITURE</a>
+                    <ul class="subnav_tent">
+                        <li><a href="/Furniture/CampingChair.HTML">Camping Chair</a></li>
+                        <li><a href="/Furniture/FoldingTable.HTML">Folding Table</a></li>
+                    </ul>
+                   
+                </li>
+                <li class="menu-item"><a href="/CookWare/CookWare.HTML">COOKWARE</a></li>
+                <li class="menu-item"><a href="/ABOUTUS.HTML">ABOUT US</a></li>
+                <li class="menu-item"><a href="LAB.HTML">LAB</a></li>
+            </ul>
+        </div>
 
-    <div class="search_box">
-      <input type="text" placeholder="Search" />
-      <i class="bx bx-search"></i>
-    </div>
+        <div class="search_box">
+            <input type="text" placeholder="Search">
+            <i class='bx bx-search'></i>
+        </div>
 
-    <div class="cart">
-      <a href="#"><i class="bx bx-shopping-bag"></i></a>
-      <a href="#"><i class="bx bx-heart"></i></a>
-      <a href="#"><i class="bx bx-user"></i></a>
-    </div>
-  </div>
+        <div class="cart">
+          <a href="/CART.HTML"><i class='bx bx-shopping-bag'></i></a>
+          <a href="#"><i class='bx bx-heart'></i></a> 
+          <a href="#"><i class='bx bx-user' ></i></a>
+        </div>
 
+    </div>
   <div class="product-page-container">
     <div class="product-main-info">
       <div class="product-image-container">
@@ -93,31 +94,47 @@
   <swiper-container class="mySwiper" navigation="true">
 
     <swiper-slide>
-        <h1>other product</h1>
-        <div class="cl item_tent">
-            <p>Lightweight Tent</p>
-        </div>
-        <div class="cl item_sleepbag">
-            <p>Sleeping bag</p>
-        </div>
-        <div class="cl item_cookware">
-            <p>Cookware</p>
+        <h1>Collection</h1>
+        <div>
+            <a href="/Tent/LightWeighTent.html">
+                <div class="cl item_tent">
+                    <p>Lightweight Tent</p>
+                </div>
+            </a>
+            <a href="/Sleeping Bag/SleepingBag.HTML">
+                <div class="cl item_sleepbag">
+                    <p>Sleeping bag</p>
+                </div>
+            </a>
+            <a href="/CookWare/CookWare.HTML">
+                <div class="cl item_cookware">
+                    <p>Cookware</p>
+                </div>
+            </a>
         </div>
     </swiper-slide>
     <swiper-slide>
-      <h1>other product</h1>
-      <div class="cl item_glampingtent">
-            <p>Glamping Tent</p>
+        <h1>Collection</h1>
+        <div>
+            <a href="/Tent/GlampingTent.HTML">
+                <div class="cl item_glampingtent">
+                    <p>Glamping Tent</p>
+                </div>
+            </a>
+            <a href="/Furniture/CampingChair.HTML">
+            <div class="cl item_campingchair">
+                <p>Camping Chair</p>
+            </div>
+            </a>
+            <a href="/Furniture/FoldingTable.HTML">
+                <div class="cl item_foldingtable">
+                    <p>Folding Table</p>
+                </div>
+            </a>
         </div>
-        <div class="cl item_campingchair">
-            <p>Camping Chair</p>
-        </div>
-        <div class="cl item_foldingtable">
-            <p>Folding Table</p>
-        </div>
+       
+        
     </swiper-slide>
-
-
 
 </swiper-container>
 <div class="footer">

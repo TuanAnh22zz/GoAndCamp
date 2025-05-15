@@ -180,13 +180,13 @@
 .page-container {
     display: flex;
     justify-content: center;
-    padding: 30px 20px; /* Add some padding around the content */
+    padding: 30px 20px; 
 }
 
 .cart-wrapper {
     display: flex;
-    gap: 20px; /* Space between the two columns */
-    max-width: 1200px; /* Max width for the content area */
+    gap: 20px; 
+    max-width: 1200px; 
     width: 100%;
 }
 
@@ -219,7 +219,7 @@
 .cart-item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     padding: 20px 0;
     border-top: 1px solid #f0f0f0;
 }

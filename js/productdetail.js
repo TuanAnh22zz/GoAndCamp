@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
   }
 
-  // Load sản phẩm từ JSON Server
   fetch(`http://localhost:3000/products/${productId}`)
       .then((res) => {
           if (!res.ok) throw new Error("Không tìm thấy sản phẩm.");
