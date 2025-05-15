@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/style/cart.css">
+
+    <title>CART</title>
+</head>
+<body>
+    <div class="header">
+        
+        <div class="logo_header">
+            <a href="HOMEPAGE.HTML"> <img src="Image/logo2-removebg-preview.png" alt="" height="100px" width="120px"></a>
+           
+        </div>
+
+        <div class="main_menu">
+            <ul id="nav">
+                <li class="menu-item">
+                    <a href="#">TENTS</a>
+                    <ul class="subnav_tent">
+                        <li><a href="/Tent/LightWeighTent.html">LightWeight Tents</a></li>
+                        <li><a href="/Tent/GlampingTent.HTML">Glamping Tents</a></li>
+                    </ul>
+                </li>
+        
+                <li class="menu-item"><a href="/Sleeping Bag/SleepingBag.HTML">SLEEPING</a></li>
+                    <li class="menu-item">
+                    <a href="#">FURNITURE</a>
+                    <ul class="subnav_tent">
+                        <li><a href="/Furniture/CampingChair.HTML">Camping Chair</a></li>
+                        <li><a href="/Furniture/FoldingTable.HTML">Folding Table</a></li>
+                    </ul>
+                   
+                </li>
+                <li class="menu-item"><a href="/CookWare/CookWare.HTML">COOKWARE</a></li>
+                <li class="menu-item"><a href="/ABOUTUS.HTML">ABOUT US</a></li>
+                <li class="menu-item"><a href="">LAB</a></li>
+            </ul>
+        </div>
+
+        <div class="search_box">
+            <input type="text" placeholder="Search">
+            <i class='bx bx-search'></i>
+        </div>
+
+        <div class="cart">
+          <a href="#"><i class='bx bx-shopping-bag'></i></a>
+          <a href="#"><i class='bx bx-heart'></i></a> 
+          <a href="#"><i class='bx bx-user' ></i></a>
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <div class="cart-wrapper">
+            <div class="cart-details-section">
+                <div class="cart-box">
+                    <h2>CART</h2>
+                    <p class="cart-item-count">You have 1 product in your cart</p>
+
+                    <div class="cart-item">
+                        <div class="item-main-info">
+                            <button class="item-remove-btn" aria-label="Xóa sản phẩm">
+                                <svg ></svg>
+                            </button>
+                            <img src=""  class="item-image">
+                            <div class="item-description">
+                                <h3></h3>
+                                <p class="item-price-current"></p>
+                            </div>
+                        </div>
+                        <div class="item-price-quantity">
+                            <p class="item-total-price-single"></p>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus" aria-label="Giảm số lượng">-</button>
+                                <span class="quantity-value">1</span>
+                                <button class="quantity-btn plus" aria-label="Tăng số lượng">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-summary-section">
+                <div class="summary-box">
+                    <h3>ORDER DETAIL</h3>
+                    <div class="summary-row total-price-row">
+                        <span>TOTAL:</span>
+                        <span class="total-amount">$890</span>
+                    </div>
+                    <button class="checkout-button">PAY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/cart.js"></script>
+</body>
+</html>

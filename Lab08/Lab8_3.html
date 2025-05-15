@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin cá nhân  </title>
+</head>
+<body>
+  <h1>User Information</h1>
+        <div id="userInfo"></div>
+  <script>
+    var data_user ={
+      "name":"Nguyễn Tuấn Anh",
+      "age":"21",
+      "email":"nguyentuananh22042004@gmai.com",
+      "address":"Thành phố Hồ Chí Minh"
+    }
+
+    function pushData(data)
+    {
+      var userinfo = document.getElementById('userInfo');
+      userinfo.innerHTML =`
+        <p>Name: ${data.name}</p>
+        <p>Age: ${data.age}</p>
+        <p>Email: ${data.email}</p>
+        <p>Address: ${data.address}</p>
+
+        
+      `
+
+      
+    }
+
+    pushData(data_user);
+  </script>
+  
+</body>
+</html>

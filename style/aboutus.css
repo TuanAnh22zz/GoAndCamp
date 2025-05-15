@@ -1,0 +1,914 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header
+{
+    margin-top: 0px;
+    background-color:#fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.search_box
+{
+    position: absolute;
+    right: 170px;
+}
+
+.search_box input
+{
+    width: 250px;
+    font-size: 15px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #000;
+    outline: none;
+    padding: 8px 0 8px 30px;
+    background-color: #fff;
+    position: relative;
+    padding: 8px 50px 8px 10px;
+
+    
+}
+
+.search_box i
+{
+    
+    position: absolute;
+    font-size: 20px;
+    background-color:#fff;
+    right: 5px;
+    top: 25%;
+    padding-right: 5px;
+}
+
+.cart
+{
+    position: absolute;
+    right: 30px;
+    background-color: #fff;
+    font-size: 30px;
+    color: #000;
+    
+}
+.cart a
+{   
+    color:#000;
+    padding: 3px;
+}
+.logo_header
+{
+   position: absolute;
+   background-color:#fff;
+   height: 100px;
+   background-repeat: no-repeat;
+   left: 30px;
+   padding: 0 8px 8px 8px;
+
+   
+}
+
+.main_menu
+{
+    position: absolute;
+
+    left: 150px;
+    right: 350px;
+    background-color: #fff;
+}
+
+#nav li
+{
+    display: inline-block;
+    padding: 15px;
+}
+
+#nav li a
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.content_1
+{
+    position: relative;
+    width: 100%;
+    height: 900px;
+
+}
+.content_1_title
+{
+    display: block;
+    position: absolute;
+    left: 200px;
+    top:30%;
+    color:lightgrey;
+    padding-right: 600px;
+}
+.content_1_title h1
+{
+    letter-spacing: 10px;
+    font-size: 100px;
+    font-style: italic;
+}
+.content_1_title h2
+{
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+
+.content_2
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+}
+.content_2_title
+{
+    width: 700px;
+    height: auto;
+    position: absolute;
+    right: 60px;
+    top: 110px;
+    padding-right: 100px;
+    color: #ccc;
+    text-align: right;
+}
+.content_2_title h2
+{
+    font-size: 40px;
+}
+
+
+.content_3
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 100px 100px;
+
+}
+.content_3_info1
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.img_info1
+{
+    width: 570px;
+    height: 500px;
+    background-image: url(../Image/Aboutus/2_8a931dda4a75407dabc270655424340c_1800x1800-1669862633048.jpg) ;
+    background-size: cover;
+
+}
+
+.info1
+{
+    position: absolute;
+    top:15%;
+    width: 50%;
+    left: 650px;
+    padding-right: 100px;
+}
+
+.info1 h2
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.info1 hr
+{
+    border-top: 3px solid #b80000;   
+    width: 70%; 
+}
+
+.info1 p
+{
+    font-size: 18px;
+    line-height: 40px;
+    padding-top: 40px;
+}
+
+
+
+.content_3_info2
+{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top:100px;
+}
+.img_info2
+{
+    position: absolute;
+    background-image: url(../Image/Aboutus/13_89b6d7e3-3ba1-4a61-a4e9-4f583f44e5a9.jpg);
+    background-size: cover;
+    width: 687px;
+    height: 687px;
+    right: 0;
+    
+}
+.info2
+{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding-right: 150px;
+    top: 15%;
+    left:100px;
+}
+.info2 h2
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.info2 hr
+{
+    border-top: 3px solid #b80000;   
+    width: 80%; 
+}
+.info2 p
+{
+    font-size: 18px;
+    line-height: 40px;
+    padding-top: 40px;
+
+}
+.btn_info2
+{
+    margin-top: 50px;
+    padding: 16px 40px;
+    font-style: italic;
+    background-color: #b80000;
+    color: #ccc;
+    border: none;
+}
+
+.content_4
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_4_main1
+{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.content_4_main1 hr
+{
+    position: absolute;
+    width: 8%;
+    transform: rotate(90deg);
+    right: 800px;
+    border-color: #b80000;
+    border-width: 2px;
+}
+
+
+.content_4_title
+{
+    position: absolute;
+    font-size: 28px;
+    width: 25%;
+    left: 200px;
+    color: #ccc;
+}
+
+.content_4_info
+{
+    position: absolute;
+    right: 200px;
+    width: 40%;
+    font-size: 20px;
+    line-height: 35px;
+    color: #ccc;
+}
+
+.content_5
+{
+    height: 1300px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.content_5_img
+{
+    display: flex;
+    height: 800px;
+    width: 100%;
+
+}
+
+.content_5 h2
+{
+    font-size: 60px;
+    line-height: 70px;
+
+}
+.content_5 h3
+{
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.content_5 hr
+{
+    width: 35%;
+    border-color: #b80000;
+    border-width: 2px;
+    margin-top: 360px;
+}
+
+
+.content_5_img1
+{
+    position: relative;
+    width: 33.33%;
+    height: 1046px;
+    background-image: url(../Image/Aboutus/about_us2.jpg);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+
+}   
+
+.content_5_img1_title
+{
+    position: absolute;
+    top: 100px;
+    display: block;
+    color: #fff;;
+    
+
+}
+
+
+.content_5_img1_info
+{
+    position: absolute;
+    color: #fff;
+    line-height: 40px;
+    top: 380px;
+    padding-right: 20px;
+    text-align: justify;
+
+}
+
+
+.content_5_img2
+
+{
+    position: relative;
+    width: 33.33%;
+    height: 900px;
+    background-image: url(../Image/Aboutus/about_us1.jpg);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    left: 10px; 
+    background-size: cover;
+}
+
+.content_5_img2_title
+{
+    position: absolute;
+    top: 100px;
+    display: block;
+    color: #fff;;
+
+}
+
+.content_5_img2_info
+{
+    position: absolute;
+    color: #fff;
+    line-height: 40px;
+    top: 380px;
+    padding-right: 20px;
+    text-align: justify;
+
+}
+
+.content_5_img3
+{
+    position: relative;
+    width: 33.33%;
+    height: 1046px;
+    background-image: url(../Image/Aboutus/about_us3.jpg);
+    background-repeat: no-repeat;
+   padding-left: 20px;
+   left: 20px;
+
+    
+}
+.content_5_img3_title
+{
+    position: absolute;
+    top: 100px;
+    display: block;
+    color: #fff;;
+
+}
+.content_5_img3_info
+{
+    position: absolute;
+    color: #fff;
+    line-height: 40px;
+    top: 380px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.content_5_sub
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 100px;
+    color: #ccc;
+
+}
+
+.content_5_sub_info
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 30px;
+    border: 1px solid #ccc;
+    margin-left: 150px;
+    margin-top: -30px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* viền nhạt mờ */
+    
+}
+.content_5_sub p
+{
+    padding-top: 20px;
+    width: 600px;
+    line-height: 40px;
+    text-align:justify;
+}
+.content_5_sub h2
+{
+    font-size: 60px;
+    width: 600px;
+    
+}
+.content_5_sub hr
+{
+    margin-top: 20px;
+    width: 50%;
+    right: 800px;
+    border-color: #b80000;
+    border-width: 2px;
+}
+
+.content_7
+{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../Image/Aboutus/img_8077-1672734061884.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content_8
+{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.content_8_title h3
+{
+    font-size: 70px;
+    color: #b80000;
+}
+.content_8_title p
+{
+    padding-top: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.content_8_img
+{
+    width: 100%;
+    height: 500px;
+    background-image: url(../Image/Aboutus/b1cab7c35cc5fbf5a6c1e86f1e2669d2.jpg);
+    background-size: cover;
+    margin-top: 40px;
+    
+}
+
+
+
+.content_9
+{
+    position: relative;
+    width: 100%;
+    height:auto;
+    top: 100px;
+    padding: 0 70px;
+}
+
+.content_9_main
+{
+    width: 100%;
+    height: 800px;
+    position: relative;
+
+
+   
+}
+.content_9_main1_img1
+{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    background-image: url(../Image/Aboutus/susanwilkinsonr_bv0s9mc8cunsplash-1669864432525.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 10%;
+    right: 0;
+    z-index: 1;
+
+}
+.content_9_main1_img2
+{
+    width: 360px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../Image/Aboutus/jpg-1672821417318.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 400px;
+    top:140px;
+    z-index: 0;
+}
+.content_9_main1_info
+{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    padding-right: 200px;
+    top: 130px;
+    left: 70px;
+
+}
+.content_9_main1_info h3
+{
+    font-size: 45px;
+    
+}
+.content_9_main1_info p
+{
+    line-height: 40px;
+    text-align: justify;
+}
+.content_9_main1_info hr
+{
+    margin-top: 30px;
+    width: 50%;
+    right: 800px;
+    border-color: #b80000;
+    border-width: 2px;
+}
+
+.content_10
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 80px;
+    padding: 0 70px;
+}
+.content_10_main
+{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.content_10_main_img1
+{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    background-image: url(../Image/Aboutus/pexelsoliversjstrm10470511-1672737237348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 13%;
+    left: 0;
+    z-index: 0;
+}
+.content_10_main_img2
+{
+    width: 370px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../Image/Aboutus/-1669864143566.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    left: 400px;
+    top:165px;
+    z-index: 1;
+}
+
+.content_10_main_info
+{
+    width: 25%;
+    position: absolute;
+    right: 70px;
+    top: -35px;
+}
+.content_10_main_info span
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.content_10_main_info p
+{
+    margin-bottom: 20px;
+    line-height: 30px;
+ 
+}
+.content_10_main_info h3
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+.content_10_main_info hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    right: 800px;
+    border-color: #b80000;
+    border-width: 2px;
+}
+
+
+
+.footer
+{
+    top: 150px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+
+.info
+{
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    color: white;
+    left: 400px;
+    top: 40px;
+    line-height: 40px;
+}
+.info a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.info li
+{
+    list-style: none;
+    width: 500px;
+}
+.info_1
+{
+    left: 0;
+}
+.info_2
+{
+    left: 250px;
+}
+.info_3
+{
+    width: 500px;
+}
+
+.social_footer
+{
+    position: absolute;
+    background-color: #fff;
+    width: 300px;
+    height: 250px;
+    top: 130px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+
+.img_footer
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url(../Image/logo2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 45px;
+    
+}
+.link_social
+{   
+    font-size: 30px;
+    margin-top: 180px;
+    margin-left: 40px;
+
+}
+.link_social a
+{
+    padding-right: 5px;
+}
+
+.payment_footer
+{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 50px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_footer button
+{
+    width: 44px;
+    height: 30px;
+}
+
+.payment_footer li
+{
+    list-style: none;
+    display: flex;
+    float: left;
+    padding-right: 10px;
+}
+
+.payment_footer button
+{
+    border-style: none;
+    
+}
+
+.gg_pay
+{
+
+    background-image: url(../Image/icon_payment/google-pay-logo-19558.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.master_card
+{
+    background-image: url(../Image/icon_payment/tải\ xuống.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.visa
+{
+    background-image: url(../Image/icon_payment/visa-logo-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.paypal
+{   background-image: url(../Image/icon_payment/images.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.apple_pay
+{
+    background-image: url(../Image/icon_payment/Apple_Pay-Logo.wine.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+.ame_express
+{
+    background-image: url(../Image/icon_payment/american-express-logo-png_seeklogo-453638.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+.copy_right
+{   
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.copy_right p
+{
+    padding-right: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.footer_signup
+{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    right: 100px;
+    top: 70px;
+    color: #fff;
+}
+
+.footer_signup h2
+{
+    padding-bottom: 30px;
+}
+.footer_signup p 
+{
+    line-height: 30px;
+}
+
+.footer_signup input
+{
+    width: 100%;
+    font-size: 15px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    outline: none;
+    position: relative;
+    padding: 15px 50px 15px 50px ;
+    margin-top: 30px;
+}
+
+.footer_signup ::placeholder
+{
+    color: #000;
+}
+
+.footer_signup_email i
+{ 
+    color: #fff;
+    position: absolute;
+    font-size: 30px;
+    left: 0px;
+    top: 0px;
+    top: 75%;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+
+

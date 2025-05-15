@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+ 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Image/pot-5901084_1280.jpg);
+    background-size: cover;    
+
+
+    
+}
+
+.container
+{
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 30px ;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 2);
+   
+}
+
+.form_box 
+{
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background: #fff;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.img_login
+{
+    height: 100%;
+    width: 50%;
+    left:0;
+    background: linear-gradient(#CCFFAA, #1E5B53);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+form
+{
+    width: 100%;
+}
+
+.container h1
+{
+    font-size: 40px;
+    color: #B5E8A4 ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.input-box 
+{
+    position: relative;
+    margin: 30px 0;
+    
+}
+
+.input-box input
+{
+    width: 80%;
+    background: #fff;
+    outline: none;
+    border: 2px;
+    border-style: solid;
+    font-size: 15px;
+    border-radius: 12px;
+    color: #666;
+    font-weight: 500;
+    padding: 13px 50px 13px 20px ;
+ 
+}
+
+.placeholder
+{
+     position: absolute;
+     left: 60px;
+     top: 12px;
+     background-color: #fff;
+     transition: 0.3s;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     pointer-events: none;
+}
+
+input:focus + .placeholder
+{
+    top: -10px;
+}
+
+
+.input-box i
+{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    
+    
+}
+
+.forgot-link
+{
+    margin: -15px 0px 15px;
+}
+
+.forgot-link a
+{
+    font-size: 13px;
+    text-decoration: none;
+    color: #333;
+    margin-left: 230px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn
+{
+    width: 50%;
+    padding: 13px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff  ;
+    cursor: pointer;
+    transition:  background-color 0.3s ease;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btn:hover
+{
+    
+    background-color:#1E5B53 ;
+    color: #fff;
+}
+
+p
+{
+    font-size: 14px;
+    margin: 27px 0 20px;
+    
+}
+
+.social a
+{
+
+    text-decoration: none;
+    font-size: 40px;
+    color: #000  ;
+    margin: 30px 8px;
+
+    
+}

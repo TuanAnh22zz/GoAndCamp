@@ -1,0 +1,1153 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.header1
+{
+
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.header1 a
+{
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    font-size: 15px;
+    text-decoration: underline;
+
+}
+
+.header1 i
+{
+    position: absolute;
+    color: #fff;
+    background-color:#000;
+    font-size: 25px;
+    right: 10px;
+
+
+}
+
+
+
+.header
+{
+    margin-top: 0px;
+    background-color:#fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+
+
+.search_box
+{
+    position: absolute;
+    right: 170px;
+}
+.search_box input
+{
+    width: 250px;
+    font-size: 15px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #000;
+    outline: none;
+    padding: 8px 0 8px 30px;
+    background-color: #fff;
+    position: relative;
+    padding: 8px 50px 8px 10px;
+
+
+}
+.search_box i
+{
+
+    position: absolute;
+    font-size: 20px;
+    background-color:#fff;
+    right: 5px;
+    top: 25%;
+    padding-right: 5px;
+}
+
+.cart
+{
+    position: absolute;
+    right: 30px;
+    background-color: #fff;
+    font-size: 30px;
+    color: #000;
+
+}
+.cart a
+{
+    color:#000;
+    padding: 3px;
+}
+.logo_header
+{
+   position: absolute;
+   background-color:#fff;
+   height: 100px;
+   background-repeat: no-repeat;
+   left: 30px;
+   padding: 0 8px 8px 8px;
+
+
+}
+.main_menu
+{
+    background-color: #fff;
+    margin-left: 160px;
+}
+
+#nav
+{
+    list-style: none;
+    display: flex;
+    padding: 15px;
+}
+
+.menu-item
+{
+    position: relative;
+}
+
+#nav li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+#nav li a:hover
+{
+    color: forestgreen;
+}
+.subnav_tent
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 200px;
+    list-style-type: none;
+    font-size: 13px;
+
+}
+
+.menu-item:hover .subnav_tent
+{
+    display: block;
+}
+
+.menu-item:hover .subnav_tent
+{
+
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.banner
+{
+
+    height: 600px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.banner video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+.overlay
+{
+
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.slogan_banner
+{
+
+    position: absolute;
+    top: 170px;
+    display: flex;
+    color: #fff;
+    z-index: 2;
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.btn_shopnow
+{
+    position: absolute;
+    z-index: 2;
+
+}
+.btn_shopnow button
+{
+    position: relative;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px ;
+    border: 3px;
+    border-color: #fff;
+    border-style: solid;
+    background-color: transparent;
+    margin-top: 100px;
+    transition: 0.3s ease all;
+    overflow: hidden;
+
+
+}
+.btn_shopnow button::before
+{
+    transition: 0.5s all ease;
+    position: absolute;
+    top:0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #fff;
+    z-index: -1;
+
+
+}
+.btn_shopnow button:hover, .btn_shopnow button:focus
+{
+    color: #000;
+}
+.btn_shopnow button:hover::before, .btn_shopnow button:focus::before
+{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+
+
+}
+.btn_shopnow button:active
+{
+    transform: scale(0.9);
+}
+
+
+.main_content
+{
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+
+
+swiper-container
+{
+    max-width: 1500px;
+    height: 500px;
+    margin: 700px auto 0;
+    padding: 0 30px;
+    position: relative;
+
+}
+swiper-slide
+{
+    padding: 0 40px;
+
+
+}
+.mySwiper h1
+{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+
+.product_menu
+{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.product_menu h1
+{
+    text-transform: uppercase;
+
+}
+
+
+.item_tent
+{
+    top: 100px;
+    position: absolute;
+    background-image: url(../Image/1464x600_07\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 300px;
+    left: 80px;
+    filter: brightness(100%);
+}
+.item_sleepbag
+{
+    top: 100px;
+    position:absolute;
+    background-image: url(../Image/1464x600__07.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    right:380px;
+    filter: brightness(100%);
+
+}
+.item_cookware
+{
+    top: 100px;
+    position:absolute;
+    background-image: url(../Image/07_92ca9996-ee91-491d-b4ba-de16eba0e8bb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    right:80px;
+    filter: brightness(100%);
+
+}
+.item_glampingtent
+{
+    top: 100px;
+    position: absolute;
+    background-image: url(../Image/Tent/glampingtent/2_736f83a7-72fe-48cd-a7fd-374f759a8829.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 300px;
+    left: 80px;
+    filter: brightness(100%);
+
+}
+
+.item_campingchair
+{
+    top: 100px;
+    position:absolute;
+    background-image: url(../Image/CampingChair/13_89b6d7e3-3ba1-4a61-a4e9-4f583f44e5a9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    right:380px;
+    filter: brightness(100%);
+}
+.item_foldingtable
+{
+    top: 100px;
+    position:absolute;
+    background-image: url(../Image/FoldingTable/5_f052c47f-eb18-4ae3-af1c-3ae4c64aebf6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    right:80px;
+    filter: brightness(100%);
+}
+
+.cl p
+{
+    position:absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    bottom: 25px;
+    left: 20px;
+    transition: 0.5s ease;
+}
+.cl p::after
+{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+.cl:hover p::after
+{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+}
+.cl:hover p
+{
+    transform: translateY(-5px);
+}
+
+
+.new_product
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    padding: 0 50px;
+ 
+
+}
+.new_product h2
+{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.collection_product
+{
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 110px;
+    row-gap: 80px;
+    padding: 0 100px;
+
+}
+
+.product
+{
+    width: 300px;
+    height: 480px;
+    transition: border 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+}
+.title
+{
+    padding-right: 50px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.product span
+{
+    font-size: 15px;
+    padding-left: 20px;
+
+
+}
+.img_product
+{
+    width: 100%;
+    height: 285px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+
+}
+
+.btn_view
+{
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    margin-left: 84px;
+    margin-top: 40px;
+
+
+}
+.btn_view button
+{
+    padding: 8px 50px;
+    position: relative;
+
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    border:  3px solid #000;
+    border-radius: 20px;
+    transition: 0.3s ease all;
+    overflow: hidden;
+}
+
+.btn_view button::before
+{
+    transition: 0.5s all ease;
+    position: absolute;
+    top:0;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color:#000;
+    z-index: -1;
+
+
+}
+.btn_view button:hover, .btn_view button:focus
+{
+    color:#fff;
+}
+.btn_view button:hover::before, .btn_view button:focus::before
+{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+
+
+}
+.btn_view button:active
+{
+    transform: scale(0.9);
+}
+
+.product:hover
+{
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+
+
+.product_intro
+{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -150px;
+
+}
+.product_intro_info
+{
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    line-height: 35px;
+    padding-right: 200px;
+
+
+}
+.product_intro_info h2
+{
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.product_intro_info h1
+{
+    padding-bottom: 20px;
+}
+.product_intro_img
+{
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    height: 500px;
+    right: 50px;
+    top: 0;
+}
+
+
+
+.img_1
+{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    background-image: url(../Image/cloudup2pro.2.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    top: 50px;
+    right: 200px;
+    border-width: 10px;
+
+}
+.img_2
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-image: url(../Image/800_4.jpg);
+    background-size: cover;
+    border-radius: 200px;
+    right: 90px;
+    bottom: 0;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 10px;
+
+}
+
+.img_3
+{
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    background-image: url(../Image/360_F_1235007305_VC7mXx0Kkv990eDyEdKBINMoag4iz7Jz.jpg);
+    background-size: cover;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    right: 40px;
+}
+
+.product_intro_btn
+{
+    position: absolute;
+    height: 50px;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    left: 80px;
+}
+
+.product_intro_btn
+{
+    position: absolute;
+    z-index: 2;
+
+}
+.product_intro_btn button
+{
+    position: relative;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    border: 3px;
+    border-color: #000;
+    background-color: #fff;
+    border-style: solid;
+    background-color: transparent;
+    margin-top: 100px;
+    transition: 0.3s ease all;
+    overflow: hidden;
+    margin-left: 50px;
+
+}
+.product_intro_btn button::before
+{
+    transition: 0.5s all ease;
+    position: absolute;
+    top:0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #000;
+    z-index: -1;
+
+
+}
+.product_intro_btn button:hover, .product_intro_btn button:focus
+{
+    color:white;
+}
+.product_intro_btn button:hover::before, .product_intro_btn button:focus::before
+{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+
+
+
+}
+.product_intro_btn button:active
+{
+    transform: scale(0.9);
+}
+
+
+.shop_the_look
+{
+    width: 100%;
+    height: 750px;
+    position: relative;
+    margin-top: -650px;
+
+
+}
+
+.shop_the_look_img
+{
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background-image: url(../Image/11_f3ee8671-199b-408e-9642-dcf51823b207.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    border-radius: 20px;
+
+}
+
+.shop_the_look_detail
+{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    right: 0;
+    top: 140px;
+    padding-left: 100px;
+    padding-right: 30px;
+
+}
+
+.img_detail
+{
+    position: absolute;
+    background-image: url(../Image/1500x1500_06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    top: 130px;
+    transition: 0.5s ease-in;
+
+}
+
+.overview
+{
+    position: absolute;
+    top: 490px;
+    line-height: 30px;
+
+}
+
+.product_color button
+{
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.cl1
+{
+    background-color: #000;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.cl2
+{
+    background-color: gray;
+    border-style: solid;
+    border-color: #fff;
+}
+.cl3
+{
+    background-color: green;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.shop_the_look_title
+{
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.img_detail:hover
+{
+    background-image: url(../Image/1500x1500_02.jpg);
+}
+
+.shop_the_look_img button
+{
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 200px;
+    background-color: #000;
+
+}
+
+.shop_the_look_img button i
+{
+    font-size: 18px;
+}
+
+.btn_1
+{
+    margin-top: 450px;
+    margin-left: 140px;
+    width: fit-content;
+}
+.btn_2
+{
+    width: fit-content;
+    margin-left: 420px;
+    margin-top: -200px;
+}
+
+.product_video
+{
+
+    position: relative;
+    margin-top: -300px;
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    overflow: hidden;
+
+}
+.product_video_info
+{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    padding: 40px;
+    line-height:  40px;
+    z-index: 2;
+    top: 50px;
+    bottom: 50px;
+    left: 80px;
+}
+
+.product_video_info_title
+{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.product_video_info h2
+{
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 5px;
+}
+.sub_text
+{
+    margin-top: 30px;
+    line-height: 50px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.product_video_test video
+{
+    position:absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer
+{
+    top: 150px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+    font-size: 15px;
+}
+
+.info
+{
+    width:  500px;
+    height: 80px;
+    position: absolute;
+    color: white;
+    left: 400px;
+    top: 40px;
+    line-height: 40px;
+}
+.info a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.info li
+{
+    list-style: none;
+    width: 500px;
+}
+.info_1
+{
+    left: 0;
+}
+.info_2
+{
+    left: 220px;
+
+}
+.info_3
+{
+    width: 500px;
+
+}
+
+
+.social_footer
+{
+    position: absolute;
+    background-color: #fff;
+    width: 300px;
+    height: 250px;
+    top: 130px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+.img_footer
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url(../Image/logo2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 45px;
+
+}
+.link_social
+{
+    font-size: 30px;
+    margin-top: 180px;
+    margin-left: 40px;
+
+}
+.link_social a
+{
+    padding-right: 5px;
+}
+
+.payment_footer
+{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_footer button
+{
+    width: 44px;
+    height: 30px;
+}
+
+.payment_footer li
+{
+    list-style: none;
+    display: flex;
+    float: left;
+    padding-right: 10px;
+}
+
+.payment_footer button
+{
+    border-style: none;
+
+}
+
+.gg_pay
+{
+
+    background-image: url(../Image/icon_payment/google-pay-logo-19558.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.master_card
+{
+    background-image: url(../Image/icon_payment/tải\ xuống.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.visa
+{
+    background-image: url(../Image/icon_payment/visa-logo-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.paypal
+{   background-image: url(../Image/icon_payment/images.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.apple_pay
+{
+    background-image: url(../Image/icon_payment/Apple_Pay-Logo.wine.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+.ame_express
+{
+    background-image: url(../Image/icon_payment/american-express-logo-png_seeklogo-453638.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+.copy_right
+{
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.copy_right p
+{
+    padding-right: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.footer_signup
+{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    right: 70px;
+    top: 70px;
+    color: #fff;
+}
+
+.footer_signup h2
+{
+    padding-bottom: 30px;
+}
+.footer_signup p
+{
+    line-height: 30px;
+}
+
+.footer_signup input
+{
+    width: 100%;
+    font-size: 15px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    outline: none;
+    position: relative;
+    padding: 15px 50px 15px 50px ;
+    margin-top: 30px;
+}
+
+.footer_signup ::placeholder
+{
+    color: #000;
+}
+
+.footer_signup_email i
+{
+    color: #fff;
+    position: absolute;
+    font-size: 30px;
+    left: 0px;
+    top: 0px;
+    top: 75%;
+    padding: 10px;
+    font-weight: lighter;
+    background-image: url();
+}
