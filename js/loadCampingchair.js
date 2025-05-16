@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/products')
+    fetch('https://db-server-eight.vercel.app/products')
         .then(response => response.json())
         .then(products => {
             const productList = document.getElementById('product-list');

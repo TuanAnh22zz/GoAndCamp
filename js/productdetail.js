@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
   }
 
-  fetch(`http://localhost:3000/products/${productId}`)
+  fetch(`https://db-server-eight.vercel.app/products/${productId}`)
       .then((res) => {
           if (!res.ok) throw new Error("Không tìm thấy sản phẩm.");
           return res.json();
