@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
               localStorage.setItem("cart", JSON.stringify(cart));
 
               if (goToCart) {
-                  window.location.href = "/cart.html";
+                  window.location.href = "/CART.HTML";
               } else {
                   alert("Product has been added to cart!");
               }
