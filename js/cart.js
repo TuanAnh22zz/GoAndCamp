@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cartBox.querySelectorAll(".cart-item").forEach(item => item.remove());
 
         if (cart.length === 0) {
-            cartBox.innerHTML += "<p>🛒 Your cart is empty.</p>";
+            cartBox.innerHTML += "<p> Your cart is empty.</p>";
             totalAmountEl.textContent = "$0.00";
             cartItemCount.textContent = "You have 0 products in your cart";
             return;

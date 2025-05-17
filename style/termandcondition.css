@@ -137,6 +137,10 @@
     transition: opacity 0.6s ease;
 }
 
+.content{
+    padding: 50px 300px;
+}
+
 .content h1
 {
     text-align: center;
