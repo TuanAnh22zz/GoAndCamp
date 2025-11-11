@@ -1,0 +1,28 @@
+# Tên của quy trình
+name: Manual Deploy to Vercel
+
+# Quy định khi nào quy trình này sẽ chạy
+on:
+  # Chạy mỗi khi có code được đẩy lên nhánh `main`
+  push:
+    branches:
+      - main
+
+# Các công việc cần thực hiện
+jobs:
+  deploy-to-vercel:
+    name: 🎉 Deploy to Vercel
+    runs-on: ubuntu-latest
+    steps:
+      # Bước 1: Lấy code từ kho chứa về máy ảo
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Bước 2: Dùng action có sẵn để ra lệnh cho Vercel deploy
+      # Nó sẽ dùng các "chìa khóa" bạn đã lưu để xác thực
+      - name: Trigger Vercel Deployment
+        uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}

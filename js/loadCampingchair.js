@@ -30,3 +30,4 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('product-list').innerHTML = `<p style="color:red;">Không thể tải sản phẩm.</p>`;
         });
 });
+ 
