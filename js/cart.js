@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartBox = document.querySelector(".cart-box");
     const cartItemCount = document.querySelector(".cart-item-count");
     const totalAmountEl = document.querySelector(".total-amount");
+    const checkoutBtn = document.querySelector(".checkout-button"); 
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -9,11 +10,45 @@ document.addEventListener("DOMContentLoaded", () => {
         return `$${price.toFixed(2)}`;
     }
 
+    function saveAndRender() {
+        localStorage.setItem("cart", JSON.stringify(cart));
+        renderCart();
+    }
+    
+    function attachEventHandlers() {
+        document.querySelectorAll(".quantity-btn.plus").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const index = btn.getAttribute("data-index");
+                cart[index].quantity++;
+                saveAndRender();
+            });
+        });
+
+        document.querySelectorAll(".quantity-btn.minus").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const index = btn.getAttribute("data-index");
+                if (cart[index].quantity > 1) {
+                    cart[index].quantity--;
+                    saveAndRender();
+                }
+            });
+        });
+
+        document.querySelectorAll(".item-remove-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const index = btn.getAttribute("data-index");
+                cart.splice(index, 1);
+                saveAndRender();
+            });
+        });
+    }
+
     function renderCart() {
-        cartBox.querySelectorAll(".cart-item").forEach(item => item.remove());
+        const existingItems = cartBox.querySelectorAll(".cart-item");
+        existingItems.forEach(item => item.remove());
 
         if (cart.length === 0) {
-            cartBox.innerHTML += "<p> Your cart is empty.</p>";
+            cartBox.innerHTML += "<p style='padding: 20px;'> Your cart is empty.</p>";
             totalAmountEl.textContent = "$0.00";
             cartItemCount.textContent = "You have 0 products in your cart";
             return;
@@ -55,39 +90,21 @@ document.addEventListener("DOMContentLoaded", () => {
         attachEventHandlers();
     }
 
-    function attachEventHandlers() {
-        document.querySelectorAll(".quantity-btn.plus").forEach(btn => {
-            btn.addEventListener("click", () => {
-                const index = btn.getAttribute("data-index");
-                cart[index].quantity++;
-                saveAndRender();
-            });
-        });
 
-        document.querySelectorAll(".quantity-btn.minus").forEach(btn => {
-            btn.addEventListener("click", () => {
-                const index = btn.getAttribute("data-index");
-                if (cart[index].quantity > 1) {
-                    cart[index].quantity--;
-                    saveAndRender();
-                }
-            });
-        });
+    if (checkoutBtn) {
+        checkoutBtn.addEventListener("click", () => {
+            let currentCart = JSON.parse(localStorage.getItem("cart")) || [];
 
-        // Xóa sản phẩm
-        document.querySelectorAll(".item-remove-btn").forEach(btn => {
-            btn.addEventListener("click", () => {
-                const index = btn.getAttribute("data-index");
-                cart.splice(index, 1);
-                saveAndRender();
-            });
+            if (currentCart.length === 0) {
+                alert("Your cart is empty! Please add items before checkout.");
+                return; 
+            }
+
+           
+            window.location.href = "Payment.html"; 
         });
     }
-
-    function saveAndRender() {
-        localStorage.setItem("cart", JSON.stringify(cart));
-        renderCart();
-    }
+    
 
     renderCart();
 });

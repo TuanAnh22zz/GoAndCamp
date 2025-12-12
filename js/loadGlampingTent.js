@@ -1,24 +1,40 @@
+
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://db-server-eight.vercel.app/products')
+    fetch('http://localhost/GoAndCamp/api/get_glampingtent.php')
         .then(response => response.json())
         .then(products => {
             const productList = document.getElementById('product-list');
-            const campingchairProducts = products.filter(product => product.category_id === 2);
+            
+            productList.innerHTML = '';
 
-            campingchairProducts.forEach(product => {
+            if (products.length === 0) {
+                productList.innerHTML = '<p style="text-align:center; width:100%;">Chưa có sản phẩm nào.</p>';
+                return;
+            }
+
+            products.forEach(product => {
                 const productDiv = document.createElement('div');
+                
                 productDiv.classList.add('product');
 
+                let imgPath = product.image_url;
+                if (!imgPath.startsWith('http') && !imgPath.startsWith('/')) {
+                    imgPath = '/' + imgPath;
+                }
+
+                const price = parseFloat(product.price).toFixed(2);
+
                 productDiv.innerHTML = `
-                    <div class="img_product" style="background-image: url('${product.image_url}');"></div>
+                    <div class="img_product" style="background-image: url('${imgPath}');"></div>
                     <div class="title">${product.name}</div>
-                    <span>$${product.price}</span>
+                    <span>$${price}</span>
                     <div class="btn_view">
                         <button>VIEW</button>
                     </div>
                 `;
 
                 productDiv.addEventListener('click', () => {
+                    
                     window.location.href = `/ProductDetail.HTML?id=${product.id}`; 
                 });
 
@@ -27,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Lỗi khi lấy dữ liệu sản phẩm:', error);
-            document.getElementById('product-list').innerHTML = `<p style="color:red;">Không thể tải sản phẩm.</p>`;
+            const list = document.getElementById('product-list');
+            if(list) list.innerHTML = `<p style="color:red; text-align:center;">Lỗi kết nối Server.</p>`;
         });
 });
